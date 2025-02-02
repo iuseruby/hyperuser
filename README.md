@@ -1,8 +1,9 @@
 pro commands for block game
 
 # Connection
-No installation required as this repository is to contain the source code
-- Type `/connect PLACEHOLDER:3000` in Minecraft Bedrock chat panel
+Type `node .` in terminal
+
+- Type `/connect 0.0.0.0:3000` in Minecraft Bedrock chat panel
 - Make sure to turn off General > "Require Encrypted Websocket" in the Settings
 - When connected, a text "[hyperuser] Connection established" should appear
 
@@ -17,10 +18,6 @@ List of unique messages sent from user to execute something: (note that some are
 
 `#delay <seconds/1000> <command>` - executes `#run <command>` after a delay
 
-`#secret "<alias>" <command>` - executes `#run <command>` when your message contains <alias> (case-sensitive)
-
-`#strictsecret "<alias>" <command>` - executes `#run <command>` when your message is exactly as <alias> (case-sensitive)
-
 `#hotkey <key> <command>` - executes `#run <command>` when <key> is pressed, only available for Windows
 
 `#addqueue <command>` - adds a command to the `queue` list, capped at 100
@@ -29,4 +26,11 @@ List of unique messages sent from user to execute something: (note that some are
 
 `#queue` - batch executes the commands from `queue` all at once
 
+`#deleteq` - deletes the `queue list`
+
 `#pro` - enter pro mode
+
+`#noob` - terminate websocket connection
+
+# Features
+- pro commands to elavate your gamer mode
